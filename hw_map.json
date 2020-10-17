@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Koven10293/FIT3179/main/paleo_specimens_table.csv"
+        "url": "https://raw.githubusercontent.com/Koven10293/FIT3179/main/paleo_specimens.csv"
       },
       "encoding": {
         "longitude": {"field": "lng", "type": "quantitative"},
