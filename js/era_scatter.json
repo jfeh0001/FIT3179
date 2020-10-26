@@ -1,0 +1,73 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"width": 500,
+"height": 400,
+"title": "Dinesaws",
+"data": {
+  "url": "https://raw.githubusercontent.com/jfeh0001/week10chart/main/paleo_occurences_table.csv"
+  },
+"params": [
+  {
+    "name": "period_select",
+    "bind": {
+      "input": "select",
+      "options": [
+        null,
+        "cenozoic",
+        "mesozoic",
+        "paleozoic"
+      ],
+      "labels": [
+        "Show All",
+        "Cenozoic (Current)",
+        "Mesozoic (Dinesaws)",
+        "Paleozoic (Pre-Dinos)"
+      ],
+      "name": "Era"
+    } 
+  }
+],
+"transform": [
+  {"filter": {"field": "phylum", "oneOf": ["Arthropoda", "Chordata", "Mollusca"]}},
+  {"calculate": "(datum.max_ma <= 66) ? 'cenozoic' : (datum.max_ma > 66 & datum.max_ma <= 252) ? 'mesozoic' : 'paleozoic'", "as": "era"},
+  {"filter": "period_select == null || datum.era == period_select"}
+  ],
+"selection": {
+  "phylum_highlight": {
+    "type": "multi",
+    "fields": ["phylum"],
+    "bind": "legend"
+  }
+},
+"mark": "circle",
+"encoding": {
+  "x": {
+   "field": "max_ma",
+      "type": "quantitative",
+      "title": "Age (ma)",
+      "scale": {"type": "linear", "domain": [1,600]}
+  },
+  "y": {
+    "field": "ref_pubyr",
+    "type": "quantitative",
+    "title": "Year Discovered",
+    "scale": {"type": "linear", "domain": [1800,2020]}
+  },
+  "color": {
+    "field": "phylum",
+     "type": "nominal",
+     "title": "Phylum"
+  },
+  "opacity": {
+    "condition": {"selection": "phylum_highlight", "value": 0.8},
+    "value": 0},
+  "tooltip": [
+    {"field": "max_ma", "type": "quantitative", "title": "Age (ma)"},
+ {"field": "phylum", "type": "nominal", "title": "Phylum"},
+ {"field": "class", "type": "nominal", "title": "Class"},
+ {"field": "order", "type": "nominal", "title": "Order"},
+ {"field": "identified_name", "type": "nominal", "title": "Species"}
+ ]
+
+  }
+}
