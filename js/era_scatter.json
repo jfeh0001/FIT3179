@@ -4,7 +4,7 @@
 "height": 400,
 "title": "Dinesaws",
 "data": {
-  "url": "https://raw.githubusercontent.com/jfeh0001/week10chart/main/paleo_occurences_table.csv"
+  "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/paleo_occurences_table.csv"
   },
 "params": [
   {
