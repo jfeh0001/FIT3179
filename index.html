@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
   
 </head>
 <body>
@@ -23,13 +23,13 @@
 
 <script type="text/javascript">
   
-  var vis1 = "fossil_map.json";
+  var vis1 = "js/dist_map.json";
   
   vegaEmbed('#fossil_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "era_cart.json";
+  var vis2 = "js/era_scatter.json";
   
   vegaEmbed('#era_cart', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
