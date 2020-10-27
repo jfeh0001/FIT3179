@@ -4,25 +4,6 @@
 "data": {
   "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
   },
-  "params": [
-  {
-    "name": "period_select",
-    "bind": {
-      "input": "select",
-      "options": [
-        "cenozoic",
-        "mesozoic",
-        "paleozoic"
-      ],
-      "labels": [
-        "Cenozoic (Current)",
-        "Mesozoic (Dinosaurs)",
-        "Paleozoic (Pre-Dinosaurs)"
-      ],
-      "name": "Era"
-    } 
-  }
-],
   "transform": [
     {"calculate": "(datum.max_ma <= 66) ? 'cenozoic' : (datum.max_ma > 66 & datum.max_ma <= 252) ? 'mesozoic' : 'paleozoic'", "as": "era"},
     {"aggregate": [{"op": "count", "as": "Count"}],
