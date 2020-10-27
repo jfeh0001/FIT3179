@@ -1,6 +1,5 @@
 #row1 {
-	height: 800px;
-	width: 2500px;
+	height: 1000px;
     margin-right: auto;
     margin-left: auto;
     background-color: #f18973;
@@ -10,6 +9,7 @@
 	height: 600px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #f15673;	
 }
 
 #row3 {
