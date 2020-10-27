@@ -26,13 +26,14 @@ h2{
 
 #fossil_map {
     	margin: 20px;
-	height: 1200px;
+	height: 900px;
 	float: left;
+	background-color: orange;
 }
 
 #era_cart {
     	margin: 20px;
-	height: 1200px;
+	height: 900px;
 	float: left;
     background-color: blue;
 }
