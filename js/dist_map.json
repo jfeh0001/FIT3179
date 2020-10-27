@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/paleo_occurences_table.csv"
+        "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
       },
       "encoding": {
         "longitude": {"field": "lng", "type": "quantitative"},
@@ -22,22 +22,17 @@
       },
       "layer": [
         {
-          "mark": {"type": "circle"}, 
+          "mark": {"type": "circle"},
           "encoding": {
-            "size": {
-              "field": "max_ma",
-              "type": "quantitative",
-              "scale": {"domain": [1, 500]}
-            },
             "color": {
-              "field": "phylum",
+              "field": "phylum_large",
               "type": "nominal",
-              "scale": {"scheme": "category20"}
+              "scale":{"range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3"]}
             },
             "tooltip": [
-              {"field": "max_ma", "type": "quantitative", "title": "Age (ma)"},
-              {"field": "phylum", "type": "ordinal", "title": "Phylum"},
-              {"field": "identified_name", "type": "ordinal", "title": "Name"}
+              {"field": "period", "type": "nominal", "title": "Period"},
+              {"field": "phylum_large", "type": "nominal", "title": "Phylum"},
+              {"field": "identified_name", "type": "nominal", "title": "Name"}
             ]
           }
         }
