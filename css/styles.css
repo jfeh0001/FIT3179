@@ -19,13 +19,19 @@
     background-color: #80ced6;
 }
 
+h2{
+    height: 200px;
+}
+
 #fossil_map {
 	width: 300px;
+	height: 800px;
 	float: left;
     background-color: red;
 }
 
 #era_cart {
+	height: 800px;
 	width: 300px;
 	float: left;
 }
