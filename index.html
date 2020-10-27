@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-* {
-	box-sizing: border-box;
-	}
- </style>
 <head>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -19,18 +14,23 @@
 <body>
 
 <h1>Australian Fossil Record</h1>
-
+	<div id="row1"> 
 	<h2>Fossil Locations</h2>
 	<div id="fossil_map"></div>
 	
 	<h2>Look Dots</h2>
 	<div id="era_cart"></div>
+	</div>
 	
-	<h2>bARS</h2>
+	<div id="row2">
+	<h3>bARS</h3>
 	<div id="era_bar"></div>
+	</div>
 
+	<div id="row3">
 	<h2>Fucked Lines tbh</h2>
 	<div id="phylum_lines"></div>
+	</div>
 	
 <script type="text/javascript">
   
@@ -52,7 +52,7 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var vis4 = "js/phylum_lines.json";
+  var vis2 = "js/phylum_lines.json";
   
   vegaEmbed('#phylum_lines', vis4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
