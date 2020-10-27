@@ -1,8 +1,8 @@
 #row1 {
-	height: 1000px;
+	height: 1200px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #f18973;
+    background-color: #dd1c77;
 }
 
 #row2 {
@@ -24,15 +24,15 @@ h2{
 }
 
 #fossil_map {
-	width: 800px;
-	height: 800px;
+	width: 1500px;
+	height: 1000px;
 	float: left;
     background-color: red;
 }
 
 #era_cart {
-	height: 800px;
-	width: 800px;
+	height: 1000px;
+	width: 1500px;
 	float: left;
 }
 
