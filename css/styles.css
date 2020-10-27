@@ -27,6 +27,7 @@ h2{
 #fossil_map {
     	margin: 20px;
 	height: 900px;
+	width: 700px;
 	float: left;
 	background-color: orange;
 }
