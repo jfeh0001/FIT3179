@@ -1,25 +1,39 @@
+#row1 {
+	width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#row2 {
+	width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#row3 {
+	width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #fossil_map {
-	left: 100px;
-	right: 100px;
+	width = 300px
+	float: left;
 }
 
 #era_cart {
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	width = 300px
+	float: left;
 }
 
 #era_bar {
-	left: 100px;
-	right: 100px;
+	width = 300px
+	float: left;
 }
 
 #phylum_lines {
-	left: 100px;
-	right: 100px;
-	height: 1000px;
-	width: 800px;
+	width = 300px
+	float: left;
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
