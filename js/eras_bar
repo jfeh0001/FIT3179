@@ -1,0 +1,55 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"width": 500,
+"height": 400,
+"title": "Through the Eras",
+"data": {
+  "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
+  },
+  "params": [
+  {
+    "name": "period_select",
+    "bind": {
+      "input": "select",
+      "options": [
+        "cenozoic",
+        "mesozoic",
+        "paleozoic"
+      ],
+      "labels": [
+        "Cenozoic (Current)",
+        "Mesozoic (Dinesaws)",
+        "Paleozoic (Pre-Dinos)"
+      ],
+      "name": "Era"
+    } 
+  }
+],
+  "transform": [
+    {"calculate": "(datum.max_ma <= 66) ? 'cenozoic' : (datum.max_ma > 66 & datum.max_ma <= 252) ? 'mesozoic' : 'paleozoic'", "as": "era"},
+    {"filter": {"field": "era", "equal": "period_select"}}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "period", "type": "nominal", "spacing": 10
+    },
+    "y": {
+      "aggregate": "count", "field": "occurence_no",
+      "title": "finds",
+      "axis": {"grid": false}
+    },
+    "x": {
+      "field": "phylum",
+      "axis": {"title": ""}
+    },
+    "color": {
+      "field": "period",
+      "scale": {"range": ["#e41a1c", "#377eb8", "#4daf4a"]}
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
+  }
+}
