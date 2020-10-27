@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
+* {
+	box-sizing: border-box;
+	}
   .column {
     float: left;
     width: 33.33%;
@@ -23,12 +26,17 @@
 
 <h1>Australian Fossil Record</h1>
 
-<h2>Fossil Locations</h2>
-<div id="fossil_map"></div>
-
-<h2>Types of Organisms</h2>
-<div id="era_cart"></div>
-
+<div class="column" style="background-color:#aaa;">
+	<h2>Fossil Locations</h2>
+	<div id="fossil_map"></div>
+<div class="column" style="background-color:#aaa;">
+	<h2>bARS</h2>
+	<div id="era_cart"></div>
+	<h3>Look Dots</h3>
+	<div id="era_bar"></div>
+<div class="column" style="background-color:#aaa;">
+	<h2>Fucked Lines tbh</h2>
+	<div id="phylum_lines"></div>
 <script type="text/javascript">
   
   var vis1 = "js/dist_map.json";
@@ -40,6 +48,18 @@
   var vis2 = "js/era_scatter.json";
   
   vegaEmbed('#era_cart', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var vis3 = "js/era_bar.json";
+  
+  vegaEmbed('#era_bar', vis3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var vis2 = "js/phylum_lines.json";
+  
+  vegaEmbed('#phylum_lines', vis4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
