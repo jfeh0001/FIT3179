@@ -1,7 +1,5 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-"width": 500,
-"height": 400,
 "title": "Through the Eras",
 "data": {
   "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
@@ -18,8 +16,8 @@
       ],
       "labels": [
         "Cenozoic (Current)",
-        "Mesozoic (Dinesaws)",
-        "Paleozoic (Pre-Dinos)"
+        "Mesozoic (Dinosaurs)",
+        "Paleozoic (Pre-Dinosaurs)"
       ],
       "name": "Era"
     } 
@@ -27,26 +25,50 @@
 ],
   "transform": [
     {"calculate": "(datum.max_ma <= 66) ? 'cenozoic' : (datum.max_ma > 66 & datum.max_ma <= 252) ? 'mesozoic' : 'paleozoic'", "as": "era"},
-    {"filter": {"field": "era", "equal": "period_select"}}
+    {"aggregate": [{"op": "count", "as": "Count"}],
+      "groupby": ["phylum_large", "period"]
+    },
+    {
+      "joinaggregate": [{"op": "sum", "field": "Count", "as": "TotalCount"}], "groupby": ["period"]
+    },
+    {
+      "calculate": "datum.Count/datum.TotalCount", "as": "PercentOfTotal"
+    }
   ],
+  "selection": {
+    "era_select": {
+      "type": "multi",
+      "fields": ["phylum_large"],
+      "bind": "legend"
+    } 
+  },
   "mark": "bar",
   "encoding": {
     "column": {
-      "field": "period", "type": "nominal", "spacing": 10
+      "field": "period", 
+      "type": "nominal", 
+      "spacing": 10,
+      "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"]
     },
     "y": {
-      "aggregate": "count", "field": "occurence_no",
-      "title": "finds",
-      "axis": {"grid": false}
-    },
+      "field": "PercentOfTotal", 
+      "type": "quantitative",
+      "axis": {"title": "Proportion"}},
     "x": {
-      "field": "phylum",
+      "field": "phylum_large",
       "axis": {"title": ""}
     },
     "color": {
-      "field": "period",
-      "scale": {"range": ["#e41a1c", "#377eb8", "#4daf4a"]}
-    }
+      "field": "phylum_large"
+    },
+    "opacity": {
+      "condition": {"selection": "era_select",
+       "value": 0.8},
+       "value": 0.2
+    },
+    "tooltip": [
+    {"field": "period", "type": "nominal", "title": "Period"},
+    {"field": "phylum_large", "type": "nominal", "title": "Phylum"}]
   },
   "config": {
     "view": {"stroke": "transparent"},
