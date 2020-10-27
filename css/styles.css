@@ -20,22 +20,22 @@
 }
 
 #fossil_map {
-	width: 300px
+	width: 300px;
 	float: left;
 }
 
 #era_cart {
-	width: 300px
+	width: 300px;
 	float: left;
 }
 
 #era_bar {
-	width: 300px
+	width: 300px;
 	float: left;
 }
 
 #phylum_lines {
-	width: 600px
+	width: 600px;
 	float: left;
 }
 body{
