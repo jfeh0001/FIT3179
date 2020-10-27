@@ -22,6 +22,7 @@
 #fossil_map {
 	width: 300px;
 	float: left;
+    background-color: red;
 }
 
 #era_cart {
@@ -37,6 +38,7 @@
 #phylum_lines {
 	width: 600px;
 	float: left;
+    background-color: orange;
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
