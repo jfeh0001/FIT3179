@@ -2,7 +2,7 @@
 	height: 1200px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #e41a1c;
+    background-color: #984ea3;
 }
 
 #row2 {
@@ -25,15 +25,17 @@ h2{
 }
 
 #fossil_map {
-	width: 1200px;
+	margin-right: auto;
+    	margin-left: auto;
 	height: 900px;
 	float: left;
     background-color: #2c7fb8;
 }
 
 #era_cart {
-	left: 50px;
-	right: 50px;
+	margin-right: auto;
+    	margin-left: auto;
+	height: 900px;
 	float: left;
     background-color: blue;
 }
