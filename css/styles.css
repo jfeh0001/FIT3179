@@ -24,7 +24,7 @@ h2{
 }
 
 #fossil_map {
-	width: 300px;
+	width: 800px;
 	height: 800px;
 	float: left;
     background-color: red;
@@ -32,7 +32,7 @@ h2{
 
 #era_cart {
 	height: 800px;
-	width: 300px;
+	width: 800px;
 	float: left;
 }
 
