@@ -23,21 +23,21 @@ h2{
 
 #fossil_map {
     	margin: 20px;
-	height: 1000px;
-	width: 2000px;
+	height: 80vh;
+	width: 60vw;
 	float: left;
 	background-color: orange;
 }
 
 #era_cart {
     	margin: 20px;
-	height: 900px;
+	height: 600px;
 	float: left;
     background-color: blue;
 }
 
 #era_bar {
-	width: 1000px;
+	width: 600px;
 	height: 600px;
 	margin: 20px;
 	float: left;
@@ -45,7 +45,7 @@ h2{
 
 #phylum_lines {
 	height: 600px;
-	width: 600px;
+	width: 30vw;
 	margin: 20px;
 	float: left;
     background-color: orange;
