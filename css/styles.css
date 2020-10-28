@@ -25,26 +25,27 @@ h2{
     	margin: 20px;
 	height: 80vh;
 	width: 60vw;
-	float: left;
+	float: right;
 	background-color: orange;
 }
 
 #era_cart {
     	margin: 20px;
-	height: 600px;
+	height: 80vh;
+	width: 30vw;
 	float: left;
     background-color: blue;
 }
 
 #era_bar {
-	width: 600px;
-	height: 600px;
+	height: 80vh;
+	width: 60vw;
 	margin: 20px;
 	float: left;
 }
 
 #phylum_lines {
-	height: 600px;
+	height: 80vh;
 	width: 30vw;
 	margin: 20px;
 	float: left;
