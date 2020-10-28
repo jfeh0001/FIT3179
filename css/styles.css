@@ -1,29 +1,25 @@
 #row1 {
 	height: 80vh;
     margin: auto;
-    background-color: #984ea3;
 }
 
 #row2 {
 	height: 50vh;
     margin: auto;
-    background-color: #f15673;	
 }
 
 #row3 {
 	height: 50vh;
     margin: auto;
-    background-color: #80ced6;
 }
 
 h2{
     	height: 40px;
-	background-color: #8856a7;
 }
 
 text1{
-	background-color: #80ced6;
 	width: 30vw;
+	height: 60vh;
 	margin: auto;
 	float: left;
 }
@@ -33,7 +29,6 @@ text1{
 	height: 60vh;
 	width: 60vw;
 	float: right;
-	background-color: orange;
 }
 
 #era_cart {
@@ -41,7 +36,6 @@ text1{
 	height: 40vh;
 	width: 30vw;
 	float: left;
-    background-color: blue;
 }
 
 #era_bar {
@@ -49,7 +43,6 @@ text1{
 	width: 60vw;
 	margin: 20px;
 	float: left;
-	background-color: orange;
 }
 
 #phylum_lines {
@@ -57,7 +50,6 @@ text1{
 	width: 30vw;
 	margin: 20px;
 	float: left;
-    background-color: orange;
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
