@@ -1,23 +1,23 @@
 #row1 {
-	height: 1200px;
+	height: 80vh;
     margin: auto;
     background-color: #984ea3;
 }
 
 #row2 {
-	height: 80vw;
+	height: 50vh;
     margin: auto;
     background-color: #f15673;	
 }
 
 #row3 {
-	height: 50vw;
+	height: 50vh;
     margin: auto;
     background-color: #80ced6;
 }
 
 h2{
-    	height: 50vw;
+    	height: 20px;
 	background-color: #8856a7;
 }
 
@@ -25,7 +25,7 @@ h2{
     	margin: 20px;
 	height: 60vh;
 	width: 60vw;
-	float: left;
+	float: right;
 	background-color: orange;
 }
 
