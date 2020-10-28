@@ -5,19 +5,19 @@
 }
 
 #row2 {
-	height: 800px;
+	height: 90vw;
     margin: auto;
     background-color: #f15673;	
 }
 
 #row3 {
-	height: 800px;
+	height: 50vw;
     margin: auto;
     background-color: #80ced6;
 }
 
 h2{
-    	height: 50px;
+    	height: 50vw;
 	background-color: #8856a7;
 }
 
