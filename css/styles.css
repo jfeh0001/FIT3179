@@ -23,8 +23,8 @@ h2{
 
 #fossil_map {
     	margin: 20px;
-	height: 900px;
-	width: 1000px;
+	height: 1000px;
+	width: 2000px;
 	float: left;
 	background-color: orange;
 }
@@ -38,13 +38,15 @@ h2{
 
 #era_bar {
 	width: 1000px;
+	height: 600px;
+	margin: 20px;
 	float: left;
 }
 
 #phylum_lines {
-	height: 1000px;
-	width: 600px;
 	height: 600px;
+	width: 600px;
+	margin: 20px;
 	float: left;
     background-color: orange;
 }
