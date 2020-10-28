@@ -21,6 +21,10 @@ h2{
 	background-color: #8856a7;
 }
 
+p{
+	background-color: #80ced6;
+}
+
 #fossil_map {
     	margin: 20px;
 	height: 60vh;
