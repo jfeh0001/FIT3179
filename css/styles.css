@@ -1,21 +1,18 @@
 #row1 {
 	height: 1200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     background-color: #984ea3;
 }
 
 #row2 {
 	height: 800px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     background-color: #f15673;	
 }
 
 #row3 {
 	height: 800px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     background-color: #80ced6;
 }
 
@@ -27,7 +24,7 @@ h2{
 #fossil_map {
     	margin: 20px;
 	height: 900px;
-	width: 700px;
+	width: 1000px;
 	float: left;
 	background-color: orange;
 }
@@ -40,13 +37,14 @@ h2{
 }
 
 #era_bar {
-	width: 300px;
+	width: 1000px;
 	float: left;
 }
 
 #phylum_lines {
-	height: 700px;
+	height: 1000px;
 	width: 600px;
+	height: 600px;
 	float: left;
     background-color: orange;
 }
