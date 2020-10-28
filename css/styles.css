@@ -24,6 +24,7 @@ h2{
 text1{
 	background-color: #80ced6;
 	width: 30vw;
+	margin: auto;
 	float: left;
 }
 
