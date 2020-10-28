@@ -21,10 +21,10 @@ h2{
 	background-color: #8856a7;
 }
 
-p1{
+text1{
 	background-color: #80ced6;
 	width: 30vw;
-	float: right;
+	float: left;
 }
 
 #fossil_map {
