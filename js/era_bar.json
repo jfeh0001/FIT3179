@@ -1,5 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"width": 1980,
 "title": "Through the Eras",
 "data": {
   "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
