@@ -1,15 +1,15 @@
 #row1 {
-	height: 80vh;
+	height: 2500px;
     margin: auto;
 }
 
 #row2 {
-	height: 50vh;
+	height: ;
     margin: auto;
 }
 
 #row3 {
-	height: 50vh;
+	height: 1500vh;
     margin: auto;
 }
 
@@ -18,17 +18,18 @@ h2{
 }
 
 text1{
-	width: 30vw;
-	height: 60vh;
+	width: 600px;
+	height: 2000px;
 	margin: auto;
 	float: left;
 }
 
 #fossil_map {
     	margin: 20px;
-	height: 60vh;
-	width: 60vw;
+	height: 2000px;
+	width: auto;
 	float: right;
+	background_color: #e41a1c;
 }
 
 #era_cart {
@@ -36,6 +37,7 @@ text1{
 	height: 40vh;
 	width: 30vw;
 	float: left;
+	background_color: #e41a1c;
 }
 
 #era_bar {
@@ -43,6 +45,7 @@ text1{
 	width: 60vw;
 	margin: 20px;
 	float: left;
+	background_color: #e41a1c;
 }
 
 #phylum_lines {
