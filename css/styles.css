@@ -33,7 +33,7 @@ text1{
 #fossil_map {
     	margin: 10px;
 	height: 1400px;
-	width: 1390;
+	width: 1390px;
 	float: right;
 	background-color: #e41a1c;
 }
@@ -41,7 +41,7 @@ text1{
 #era_cart {
     	margin: 10px;
 	height: 900px;
-	width: 700;
+	width: 700px;
 	float: left;
 	background-color: #e41a1c;
 }
@@ -56,7 +56,7 @@ text1{
 
 #phylum_lines {
 	height: 900px;
-	width: 700;
+	width: 700px;
 	margin: 10px;
 	float: left;
 	background-color: #beaed4
