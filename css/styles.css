@@ -5,14 +5,14 @@
 }
 
 #row2 {
-	height: ;
-    margin: auto;
+	height: 1500px;
+    	margin: auto;
 	background-color: #beaed4
 }
 
 #row3 {
-	height: 1500vh;
-    margin: auto;
+	height: 1500px;
+  	margin: auto;
 	background-color: #4daf4a
 }
 
@@ -37,23 +37,23 @@ text1{
 
 #era_cart {
     	margin: 20px;
-	height: 40vh;
-	width: 30vw;
+	height: 1000px;
+	width: 1000px;
 	float: left;
 	background-color: #e41a1c;
 }
 
 #era_bar {
-	height: 40vh;
-	width: 60vw;
+	height: 1000px;
+	width: 1000pxw;
 	margin: 20px;
 	float: left;
 	background-color: #e41a1c;
 }
 
 #phylum_lines {
-	height: 40vh;
-	width: 30vw;
+	height: 1000px;
+	width: 1000px;
 	margin: 20px;
 	float: left;
 }
