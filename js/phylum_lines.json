@@ -2,15 +2,35 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "",
   "data": {"url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"},
+  "transform": [
+    {
+      "aggregate": [{
+       "op": "count",
+       "field": "phylum_large",
+       "as": "phylum_count"
+      }],
+      "groupby": ["period", "phylum_large"]
+    }
+  ],
+"selection": {
+  "phylum_highlight": {
+    "type": "multi",
+    "fields": ["phylum_large"],
+    "bind": "legend"
+  }
+},
   "mark": {
     "type": "line",
     "point": true
   },
   "encoding": {
     "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "Period"},
-    "y": {"aggregate":"count", "field": "phylum", "type": "nominal", "title": "Registered Entries"},
+    "y": {"field": "phylum_count", "type": "quantitative", "title": "Registered Entries"},
     "color": {"field": "phylum_large", "type": "nominal", "title": "Phylum"},
+    "opacity": {"condition": {"selection": "phylum_highlight", "value": 0.8},
+    "value": 0.2},
     "tooltip": [
-    {"field": "period", "type": "nominal", "title": "Period"}]
+    {"field": "period", "type": "nominal", "title": "Period"}
+    ]
 }
 }
