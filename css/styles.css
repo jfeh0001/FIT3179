@@ -41,14 +41,14 @@ text1{
 #era_cart {
     	margin: 10px;
 	height: 900px;
-	width: 700px;
+	width: 680px;
 	float: left;
 	background-color: #e41a1c;
 }
 
 #era_bar {
 	height: 900px;
-	width: 2000pxw;
+	width: 1980px;
 	margin: 10px;
 	float: left;
 	background-color: #e41a1c;
@@ -56,7 +56,7 @@ text1{
 
 #phylum_lines {
 	height: 900px;
-	width: 700px;
+	width: 680px;
 	margin: 10px;
 	float: left;
 	background-color: #beaed4
