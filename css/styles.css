@@ -1,17 +1,17 @@
 #row1 {
-	height: 2500px;
+	height: 1500px;
     margin: auto;
 	background-color: #4daf4a
 }
 
 #row2 {
-	height: 1500px;
+	height: 1000px;
     	margin: auto;
 	background-color: #beaed4
 }
 
 #row3 {
-	height: 1500px;
+	height: 1000px;
   	margin: auto;
 	background-color: #4daf4a
 }
@@ -22,14 +22,14 @@ h2{
 
 text1{
 	width: 600px;
-	height: 2000px;
+	height: 1400px;
 	margin: auto;
 	float: left;
 }
 
 #fossil_map {
     	margin: 20px;
-	height: 2000px;
+	height: 1400px;
 	width: auto;
 	float: right;
 	background-color: #e41a1c;
@@ -37,14 +37,14 @@ text1{
 
 #era_cart {
     	margin: 20px;
-	height: 1000px;
-	width: 1000px;
+	height: 900px;
+	width: auto;
 	float: left;
 	background-color: #e41a1c;
 }
 
 #era_bar {
-	height: 1000px;
+	height: 900px;
 	width: 1000pxw;
 	margin: 20px;
 	float: left;
@@ -52,10 +52,11 @@ text1{
 }
 
 #phylum_lines {
-	height: 1000px;
-	width: 1000px;
+	height: 900px;
+	width: auto;
 	margin: 20px;
 	float: left;
+	background-color: #beaed4
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
