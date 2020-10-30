@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 1190,
+  "width": 1290,
   "height": 1000,
   "title": "Australian Fossil Locations",
   "projection": {"type": "mercator"},
