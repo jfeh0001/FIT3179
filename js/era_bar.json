@@ -2,7 +2,7 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 "width": 65,
   "height": 120,  
-"title": {"text": "", "fontSize": 30, "align": "center", "orient": "top"},
+"title": {"text": ""},
 "data": {
   "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
   },
@@ -33,19 +33,19 @@
       "spacing": 10,
       "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"],
       "title": "Period",
-      "header": {"labelFontSize": 20, "titleFontSize":25}
+      "header": {"labelFontSize": 13, "titleFontSize":15}
     },
     "y": {
       "field": "PercentOfTotal", 
       "type": "quantitative",
-      "axis": {"title": "Proportion", "titleFontSize": 20}},
+      "axis": {"title": "Proportion", "titleFontSize": 15}},
     "x": {
       "field": "phylum_large",
-      "axis": {"title": "Phylum", "labelFontSize": 20, "titleFontSize": 20}
+      "axis": {"title": "Phylum", "labelFontSize": 15, "titleFontSize": 15}
     },
     "color": {
       "field": "phylum_large",
-      "legend": {"title": "Phylum", "titleFontSize": 25, "labelFontSize": 20}
+      "legend": {"title": "Phylum", "titleFontSize": 15, "labelFontSize": 13}
     },
     "opacity": {
       "condition": {"selection": "era_select",
