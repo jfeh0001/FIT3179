@@ -1,20 +1,20 @@
 #row1 {
-	height: 1200px;
-	width: 2100px;
+	height: 600px;
+	width: 1050px;
     margin: auto;
 	background-color: #4daf4a
 }
 
 #row2 {
-	height: 1000px;
-	width: 2100px;
+	height: 500px;
+	width: 1050px;
     	margin: auto;
 	background-color: #beaed4
 }
 
 #row3 {
-	height: 1000px;
-	width: 2100px;
+	height: 500px;
+	width: 1050px;
   	margin: auto;
 	background-color: #4daf4a
 }
@@ -36,7 +36,7 @@ text1{
 	height: 550px;
 	margin: auto;
 	float: left;
-	font-size: 40px;
+	font-size: 13px;
 }
 
 #fossil_map {
