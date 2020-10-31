@@ -1,5 +1,5 @@
 #row1 {
-	height: 1500px;
+	height: 1200px;
 	width: 2100px;
     margin: auto;
 	background-color: #4daf4a
@@ -27,7 +27,7 @@ h2{
 
 text1{
 	width: 690px;
-	height: 1400px;
+	height: 1100px;
 	margin: auto;
 	float: left;
 	font-size: 30px;
@@ -35,7 +35,7 @@ text1{
 
 #fossil_map {
     	margin: 10px;
-	height: 1400px;
+	height: 1100px;
 	width: 1390px;
 	float: right;
 	background-color: #e41a1c;
