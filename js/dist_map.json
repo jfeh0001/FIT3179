@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 1290,
-  "height": 1000,
-  "title": "Australian Fossil Locations",
+  "width": 645,
+  "height": 500,
+  "title": "",
   "projection": {"type": "mercator"},
   "layer": [
     {
@@ -36,7 +36,7 @@
               "field": "era",
               "type": "nominal",
               "scale":{"range": ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3"]},
-              "legend": {"title": "Era"}
+              "legend": {"title": "Era", "titleFontSize": 15, "labelFontSize": 13, "orient": "top-right"}
             },
             "opacity": {"condition": {"selection": "era_highlight", "value": 1}, "value": 0},
             "tooltip": [
