@@ -19,6 +19,12 @@
 	background-color: #4daf4a
 }
 
+h1{
+    	height: 60px;
+	font-size: 50px;
+	text-align: center;
+}
+
 h2{
     	height: 40px;
 	font-size: 40px;
