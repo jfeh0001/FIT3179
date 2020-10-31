@@ -26,8 +26,8 @@
     "point": true
   },
   "encoding": {
-    "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "Period"},
-    "y": {"field": "phylum_count", "type": "quantitative", "title": "Registered Entries"},
+    "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "Period", "axis": {"grid": false}},
+    "y": {"field": "phylum_count", "type": "quantitative", "title": "Registered Entries" , "axis": {"grid": false}},
     "color": {"field": "phylum_large", 
     "type": "nominal", 
     "title": "Phylum",
@@ -35,7 +35,7 @@
     "opacity": {"condition": {"selection": "phylum_highlight", "value": 0.8},
     "value": 0.2},
     "tooltip": [
-    {"field": "period", "type": "nominal", "title": "Period"}
+    {"field": "period", "type": "nominal", "title": "Period"}, {"field": "Fossils", "type": "nominal", "title": "phylum_count"}
     ]
 }
 }
