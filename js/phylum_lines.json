@@ -28,7 +28,10 @@
   "encoding": {
     "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "Period"},
     "y": {"field": "phylum_count", "type": "quantitative", "title": "Registered Entries"},
-    "color": {"field": "phylum_large", "type": "nominal", "title": "Phylum"},
+    "color": {"field": "phylum_large", 
+    "type": "nominal", 
+    "title": "Phylum",
+    "legend": {"title": "Phylum", "titleFontSize": 13, "labelFontSize": 11, "orient": "top-right"}},
     "opacity": {"condition": {"selection": "phylum_highlight", "value": 0.8},
     "value": 0.2},
     "tooltip": [
