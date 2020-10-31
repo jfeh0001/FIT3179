@@ -42,21 +42,24 @@
 "mark": "circle",
 "encoding": {
   "x": {
-   "field": "max_ma",
-      "type": "quantitative",
-      "title": "Age (ma)",
-      "scale": {"type": "linear", "domain": [1,600]}
+    "field": "max_ma",
+    "type": "quantitative",
+    "title": "Age (ma)",
+    "scale": {"type": "linear", "domain": [1,600]},
+    "axis": {"grid": false}
   },
   "y": {
     "field": "ref_pubyr",
     "type": "quantitative",
     "title": "Year Discovered",
-    "scale": {"type": "linear", "domain": [1800,2020]}
+    "scale": {"type": "linear", "domain": [1800,2020]},
+      "axis": {"grid": false}
   },
   "color": {
     "field": "phylum",
      "type": "nominal",
-     "title": "Phylum"
+     "title": "Phylum",
+    "legend": {"title": "Phylum", "titleFontSize": 13, "labelFontSize": 11, "orient": "bottom-right"}
   },
   "opacity": {
     "condition": {"selection": "phylum_highlight", "value": 0.8},
