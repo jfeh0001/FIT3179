@@ -45,7 +45,7 @@
     },
     "color": {
       "field": "phylum_large",
-      "legend": {"title": "Phylum", "titleFontSize": 20, "labelFontSize": 15}
+      "legend": {"title": "Phylum", "titleFontSize": 25, "labelFontSize": 20}
     },
     "opacity": {
       "condition": {"selection": "era_select",
