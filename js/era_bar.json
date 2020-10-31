@@ -1,8 +1,8 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 "width": 150,
-  "height": 400,
-"title": "Through the Eras",
+  "height": 400,  
+"title": {"text": "", "fontSize": 30, "align": "center", "orient": "top"},
 "data": {
   "url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"
   },
@@ -15,7 +15,7 @@
       "joinaggregate": [{"op": "sum", "field": "Count", "as": "TotalCount"}], "groupby": ["period"]
     },
     {
-      "calculate": "datum.Count/datum.TotalCount", "as": "PercentOfTotal"
+      "calculate": "round(1000*(datum.Count/datum.TotalCount))/10", "as": "PercentOfTotal"
     }
   ],
   "selection": {
@@ -31,18 +31,21 @@
       "field": "period", 
       "type": "nominal", 
       "spacing": 10,
-      "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"]
+      "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"],
+      "title": "Period",
+      "header": {"labelFontSize": 20, "titleFontSize":25}
     },
     "y": {
       "field": "PercentOfTotal", 
       "type": "quantitative",
-      "axis": {"title": "Proportion"}},
+      "axis": {"title": "Proportion", "titleFontSize": 20}},
     "x": {
       "field": "phylum_large",
-      "axis": {"title": ""}
+      "axis": {"title": "Phylum", "labelFontSize": 20, "titleFontSize": 20}
     },
     "color": {
-      "field": "phylum_large"
+      "field": "phylum_large",
+      "legend": {"title": "Phylum", "titleFontSize": 20, "labelFontSize": 15}
     },
     "opacity": {
       "condition": {"selection": "era_select",
@@ -51,6 +54,7 @@
     },
     "tooltip": [
     {"field": "period", "type": "nominal", "title": "Period"},
+    {"field": "PercentOfTotal", "type": "nominal", "title": "% of Finds"},
     {"field": "phylum_large", "type": "nominal", "title": "Phylum"}]
   },
   "config": {
