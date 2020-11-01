@@ -56,6 +56,15 @@ text2{
 	background-color: #be34d4
 }
 
+text3{
+	width: 300px;
+	height: 450px;
+	float: right;
+	margin: 5px;
+	font-size: 15px;
+	background-color: #be34d4
+}
+
 #fossil_map {
     	margin: 5px;
 	height: 550px;
