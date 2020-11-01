@@ -26,7 +26,7 @@
     "point": true
   },
   "encoding": {
-    "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "Period", "axis": {"grid": false}},
+    "x": {"field": "period", "sort": ["Cambrian", "Ordovician", "Silurian", "Devonian", "Carboniferous", "Permian", "Triassic", "Jurassic", "Cretaceous", "Paleogene", "Neogene", "Quaternary"], "title": "", "axis": {"grid": false}},
     "y": {"field": "phylum_count", "type": "quantitative", "title": "Registered Entries" , "axis": {"grid": false}},
     "color": {"field": "phylum_large", 
     "type": "nominal", 
