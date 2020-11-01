@@ -41,7 +41,7 @@
       "axis": {"title": "Proportion", "titleFontSize": 15}},
     "x": {
       "field": "phylum_large",
-      "axis": {"title": "Phylum", "labelFontSize": 15, "titleFontSize": 15}
+      "axis": {"title": "Phylum", "labelFontSize": 0, "titleFontSize": 0, "ticks": false}
     },
     "color": {
       "field": "phylum_large",
