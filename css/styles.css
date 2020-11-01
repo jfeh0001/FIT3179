@@ -1,5 +1,5 @@
 #body {
-	background-colour: #CA5A41;
+	background-colour: red;
 }
 
 #row1 {
@@ -15,7 +15,7 @@
 }
 
 #row3 {
-	height: 500px;
+	height: 510px;
 	width: 1100px;
   	margin: auto;
 }
