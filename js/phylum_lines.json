@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 410,
+  "width": 415,
   "height": 350,
   "title": "",
   "data": {"url": "https://raw.githubusercontent.com/jfeh0001/FIT3179/main/Data/animal_table.csv"},
