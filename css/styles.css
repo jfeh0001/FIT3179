@@ -61,6 +61,7 @@ text2{
 	height: 550px;
 	width: 770px;
 	float: right;
+	background-color: #be34d4
 }
 
 #era_cart {
@@ -82,7 +83,7 @@ text2{
 	height: 450px;
 	width: 470px;
 	margin: 5px;
-	background-color: #beaed4
+	background-color: #be34d4
 	float: left;
 }
 body{
